@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>버스 어디야? 개인정보 처리방침</title>
+<style>
+:root{--bg:#fff;--fg:#1c1e24;--muted:#5b6070;--line:#dfe3ec;--accent:#1f74c4;--code:#f1f3f8}
+@media(prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e8eaf0;--muted:#a0a6b5;--line:#2d333f;--accent:#6db3f2;--code:#1f242d}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif}
+main{max-width:760px;margin:0 auto;padding:32px 16px 64px}
+h1{font-size:1.7rem;margin:0 0 12px}h2{font-size:1.2rem;margin:2rem 0 .5rem;padding-top:1rem;border-top:1px solid var(--line)}
+code{background:var(--code);padding:1px 5px;border-radius:4px;font-size:.9em}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:.95rem}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}th{background:var(--code)}
+a{color:var(--accent)}
+</style>
+</head>
+<body><main>
+<h1>버스 어디야? 개인정보 처리방침</h1>
+<p><strong>시행일: 2026년 11월 17일</strong> · 앱 버전 1.0 이상 · 패키지명 <code>com.seanandbo.app.seoulbus</code></p>
+<p>버스 어디야?(이하 "앱")는 서울 시내버스 도착 정보를 보여주는 앱입니다. 이 앱은 <strong>회원가입·로그인이 없고, 개발자가 운영하는 서버도 없으며, 개발자는 이용자의 개인정보를 수집하지 않습니다.</strong> 이 문서는 앱이 기기에 무엇을 저장하고, 어떤 네트워크 통신을 하는지 있는 그대로 설명합니다.</p>
+<h2>1. 개발자가 수집하는 개인정보</h2>
+<p>없습니다. 앱은 이름, 이메일, 전화번호, 계정 정보, 위치 정보, 기기 식별자(광고 ID 등), 연락처, 사진, 결제 정보를 요청하거나 수집하지 않습니다. 앱이 요구하는 권한은 인터넷 접근(<code>INTERNET</code>) 하나뿐이며, 위치 권한은 사용하지 않습니다.</p>
+<h2>2. 기기에만 저장되는 데이터</h2>
+<p>다음 항목은 이용자 기기의 앱 전용 저장 공간에만 저장되며, 개발자에게 전송되지 않습니다.</p>
+<table><thead><tr><th>항목</th><th>목적</th></tr></thead><tbody><tr><td>즐겨찾기한 노선·정류장, 노선+정류장 조합, 상단 고정·정렬 정보</td><td>홈 화면에 즐겨찾기와 도착 정보 표시</td></tr><tr><td>최근 검색한 노선·정류장 기록</td><td>검색 기록 표시</td></tr><tr><td>자동 새로고침 주기 설정</td><td>앱 설정 유지</td></tr></tbody></table>
+<p>앱을 삭제하거나 설정 &gt; 앱 &gt; 버스 어디야? &gt; 저장공간에서 데이터를 삭제하면 위 데이터는 모두 삭제됩니다. 앱 안에서 즐겨찾기와 검색 기록을 직접 지울 수도 있습니다.</p>
+<p>노선·정류장 기본 정보(노선명, 정류장명, 좌표 등)는 앱에 내장된 공개 데이터이며 이용자 정보가 아닙니다.</p>
+<h2>3. 네트워크 통신 (서울시 TOPIS)</h2>
+<p>실시간 도착 정보와 버스 위치를 보여주기 위해 앱은 서울특별시 TOPIS 서버(<code>topis.seoul.go.kr</code>)에 HTTPS로 요청을 보냅니다.</p>
+<ul>
+<li><strong>전송되는 내용:</strong> 조회하려는 정류장 번호(ARS ID) 또는 노선 ID. 이용자를 식별하는 값(계정, 기기 ID, 위치 등)은 포함하지 않습니다.</li>
+<li><strong>수신자:</strong> 서울특별시(TOPIS). 모든 인터넷 통신과 마찬가지로 상대 서버는 요청을 처리하는 과정에서 이용자의 IP 주소 등 통신 정보를 알 수 있으며, 이는 서울특별시의 정책에 따라 처리됩니다. 개발자는 이 정보를 받거나 저장하지 않습니다.</li>
+<li>앱은 즐겨찾기·검색 기록 목록 자체를 TOPIS나 다른 곳에 보내지 않습니다. 다만 즐겨찾기한 정류장의 도착 정보를 보여주려면 해당 정류장 번호가 조회 요청에 포함됩니다.</li>
+</ul>
+<h2>4. 광고, 분석, 제3자 제공</h2>
+<p>앱에는 광고 SDK, 분석(애널리틱스) SDK, 오류 수집 SDK가 없습니다. 개발자는 어떤 정보도 제3자에게 판매하거나 제공하지 않습니다.</p>
+<h2>5. 기기 백업</h2>
+<p>Android의 자동 백업 기능이 켜져 있으면, 기기 설정에 따라 앱 데이터(즐겨찾기·검색 기록·설정)가 이용자의 Google 계정에 백업될 수 있습니다. 이는 Android와 Google의 기능이며 개발자는 백업된 데이터에 접근할 수 없습니다. 백업은 기기의 설정 &gt; Google &gt; 백업에서 끌 수 있습니다.</p>
+<h2>6. 보관 및 파기</h2>
+<p>개발자가 보관하는 이용자 데이터는 없습니다. 기기에 저장된 데이터는 앱 삭제 또는 데이터 삭제 시 즉시 파기됩니다.</p>
+<h2>7. 아동</h2>
+<p>앱은 연령에 관계없이 사용할 수 있으나 개인정보를 수집하지 않으므로 만 14세 미만 아동의 개인정보도 수집하지 않습니다. 앱은 아동을 주 대상으로 하지 않습니다.</p>
+<h2>8. 비공식 앱 고지</h2>
+<p>버스 어디야?는 개인 개발자가 만든 비공식 앱이며 서울특별시 또는 그 산하 기관과 제휴·후원 관계가 없습니다. 도착 정보는 서울특별시 TOPIS가 제공하는 데이터이며 실제 운행 상황과 다를 수 있습니다.</p>
+<h2>9. 처리방침 변경</h2>
+<p>내용이 바뀌면 이 문서와 앱 내 개인정보 처리방침 화면에 변경 내용과 시행일을 갱신합니다. 수집 항목이 늘어나는 등 중요한 변경은 앱 업데이트 설명에도 안내합니다.</p>
+<h2>10. 문의</h2>
+<p>개인정보 관련 문의: <strong>seanandbo8623@gmail.com</strong></p>
+<p>개발자: seanandbo</p>
+<h2>변경 이력</h2>
+<table><thead><tr><th>시행일</th><th>내용</th></tr></thead><tbody><tr><td>2026-11-17</td><td>최초 게시</td></tr></tbody></table>
+</main></body></html>
